@@ -20,7 +20,7 @@ body {
     width: 25%;
     display: flex;
     flex-direction: column;
-    transform: translateX(-99.7%);
+    transform: translateX(-97%);
     transition: transform .5s;
     text-align: right;
 }
@@ -56,50 +56,25 @@ li a:hover {
   li:nth-child(6) a:hover { filter: hue-rotate(280deg); }
   li:nth-child(7) a:hover { filter: hue-rotate(325deg); }
   
-li a img {
-    width: 6vw; 
-    padding: 4%;
-}
+
 section {
     margin: 1%;
     padding: 5%;
 }
 
-.slider {
-    width: 100%;
-    overflow: hidden;
-}
-
-.slides {
-    display: flex;
-    animation: slide 60s infinite linear;
-}
-
-.slides img {
-    height: 70vh; 
-    flex: 0 0 auto; 
-}
-
-@keyframes slide {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(-25%); }
-    40% { transform: translateX(-50%); }
-    60% { transform: translateX(-75%); }
-    80% { transform: translateX(-100%); }
-    100% { transform: translateX(0); }
-}
 
 #home {
     margin-top: -10px;
     float: right;
     text-align: right;
-    background-color: rgb(255, 255, 255);
-    background-image: url('../assets/confetti.svg');
-
+    background-image: url('../assets/confetti.svg'); 
+    
 }
 
-#home content:hover{
+#home ::backdrop:hover{
+    background-color: rgb(255, 255, 255);
     animation: rotate 5s infinite;
+    backdrop-filter: hue-rotate(110deg);
 }
 
 @keyframes rotate {
@@ -138,7 +113,7 @@ section {
 
 
 #home p {
-    font-size: 2vh;
+    font-size: 3vh;
     line-height: 2rem;
 }
 
@@ -153,6 +128,30 @@ section {
     margin-top: 0;
 }
 
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    animation: slide 60s infinite linear;
+}
+
+.slides img {
+    height: 70vh; 
+    flex: 0 0 auto; 
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-25%); }
+    40% { transform: translateX(-50%); }
+    60% { transform: translateX(-75%); }
+    80% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
 #about {
     margin: 0;
     position: relative;
@@ -160,6 +159,7 @@ section {
     background-image: url('../assets/banner.png');
     background-position: cover;
     font-size: 3vh;
+    padding: 0 10% 0 10%;
 }
 
 #about p {
@@ -239,6 +239,7 @@ section {
      filter: hue-rotate(360deg);
     }
   }
+  
 
 #address p:hover {
         animation: hue 5s infinite;
@@ -255,6 +256,11 @@ section {
 #address p a {
     text-decoration: none;
     color: yellow;
+}
+
+#address img {
+    width:5vw;
+    padding: 3vh;
 }
 
 footer {
