@@ -92,7 +92,7 @@ section {
     background-color: rgb(255, 255, 255);
 }
 
-  #home ::backdrop{
+#home ::backdrop{
     background-image: url('../assets/confetti.svg');
     animation: rotate 5s infinite;
 }
@@ -108,6 +108,7 @@ section {
 
 
 #home h2 {
+    font-family: 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
     font-size: 5vh;
     letter-spacing: 0.5rem;
