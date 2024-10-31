@@ -67,12 +67,14 @@ section {
     margin-top: -10px;
     float: right;
     text-align: right;
-    background-image: url('../assets/confetti.svg'); 
+    background-color: rgba(255, 255, 255, 0.818);
+    background-image: url('../assets/confetti.svg');
+    background-blend-mode: screen; 
     
 }
 
-#home ::backdrop:hover{
-    background-color: rgb(255, 255, 255);
+#home::after{
+   
     animation: rotate 5s infinite;
     backdrop-filter: hue-rotate(110deg);
 }
@@ -159,15 +161,19 @@ section {
     background-image: url('../assets/banner.png');
     background-position: cover;
     font-size: 3vh;
-    padding: 0 10% 0 10%;
+    padding: 10%;
+    text-align: center;
 }
 
 #about p {
     font-style: italic;
 }
 
+#members {
+    align-content: center;
+}
 #submit-event{
-    align-items: center;
+    align-content: center;
 }
 
 #submit-event button {
