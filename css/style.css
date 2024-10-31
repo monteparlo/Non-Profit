@@ -38,6 +38,7 @@ li a {
     font-weight: bolder;
     font-size: 250%;
     letter-spacing: 0.4rem;
+    align-items: center;
   }
   
 li a:hover {
@@ -55,7 +56,10 @@ li a:hover {
   li:nth-child(6) a:hover { filter: hue-rotate(280deg); }
   li:nth-child(7) a:hover { filter: hue-rotate(325deg); }
   
-
+li a img {
+    width: 6vw; 
+    padding: 4%;
+}
 section {
     margin: 1%;
     padding: 5%;
@@ -90,10 +94,11 @@ section {
     float: right;
     text-align: right;
     background-color: rgb(255, 255, 255);
+    content: url('../assets/confetti.svg');
+
 }
 
-#home ::backdrop{
-    background-image: url('../assets/confetti.svg');
+#home content:hover{
     animation: rotate 5s infinite;
 }
 
@@ -161,7 +166,11 @@ section {
     font-style: italic;
 }
 
-#about button {
+#submit-event{
+    align-items: center;
+}
+
+#submit-event button {
     font-size: 6vh;
     padding: 12px;
     margin: 7px;
@@ -169,7 +178,7 @@ section {
     background-color: rgba(0, 0, 0, 0);
 }
 
-#about button:hover {
+#submit-event button:hover {
     animation: hue 5s infinite;
 }
 @keyframes hue {
@@ -190,9 +199,11 @@ section {
     height: 80vh;
 }
 
+
 #contact {
     background-color: black;
     color: white;
+    padding: 7%;
 }
 
 #contact h2 {
