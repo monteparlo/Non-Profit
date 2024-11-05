@@ -73,10 +73,8 @@ section {
     
 }
 
-#home::after{
-   
+#logo:hover{
     animation: rotate 5s infinite;
-    backdrop-filter: hue-rotate(110deg);
 }
 
 @keyframes rotate {
@@ -189,8 +187,13 @@ section {
 }
 
 
-#services p{
-    font-size: 4vh;
+#services p {
+    font-size: 6vh;
+    line-height: 8rem;
+    letter-spacing: 14px;
+    color: rgb(110, 110, 255);
+    animation: hue 5s infinite;
+    font-weight: bolder;
 }
 
 #events {
@@ -206,10 +209,15 @@ section {
     margin: 7px;
     color:aqua;
     background-color: rgba(0, 0, 0, 0);
+    border: solid 18px black;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #submit-event:hover, #donate:hover{
     animation: hue 5s infinite;
+    border: solid 38px black;
+    font-weight: bolder;
 }
 @keyframes hue {
     0% {
