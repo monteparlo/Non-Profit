@@ -169,14 +169,38 @@ section {
     font-style: italic;
 }
 
-#members {
-    align-content: center;
+#about h2, #services h2, #members h2, #events h2 {
+    font-size: 5vh;
+    justify-content: center;
+    text-align: center;
 }
-#submit-event{
+
+#members, #services {
+    align-content: center;
+    align-items: center;
+    padding: 10vh;
+    justify-content: center;
+    margin: 5vh;
+    text-align: center;
+}
+
+#members p {
+    font-size: 3vh;
+}
+
+
+#services p{
+    font-size: 4vh;
+}
+
+#events {
+    justify-content: center;
+    align-items: center;
     align-content: center;
 }
 
-#submit-event button {
+#submit-event, #donate{
+    align-content: center;
     font-size: 6vh;
     padding: 12px;
     margin: 7px;
@@ -184,7 +208,7 @@ section {
     background-color: rgba(0, 0, 0, 0);
 }
 
-#submit-event button:hover {
+#submit-event:hover, #donate:hover{
     animation: hue 5s infinite;
 }
 @keyframes hue {
@@ -295,6 +319,35 @@ animation: hue 5s infinite;
     }
   }
 
+#form {
+    background-color: black;
+    margin: 20vh;
+    padding: 5vh;
+    font-size: 4vh;
+    color: white;
+}
 
+#buttons {
+    font-size: 6vh;
+    padding: 12px;
+    margin: 7px;
+    color:aqua;
+    background-color: black;
+}
+
+#buttons:hover {
+    animation: hue 5s infinite;
+}
+
+#form h2 {
+    color: rgb(204, 255, 122);
+}
+#form h2:hover {
+    animation: hue 5s infinite;
+}
+
+#form input {
+    font-size: 4vh;
+}
 
 
